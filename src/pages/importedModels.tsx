@@ -25,6 +25,8 @@ export default function ImportedModels() {
     gltfLoader.setDRACOLoader(dracoLoader);
 
     let mixer: any = null;
+    let mixers: any = null;
+
     gltfLoader.load("/models/Fox/glTF/Fox.gltf", (gltf) => {
       console.log(gltf);
       mixer = new THREE.AnimationMixer(gltf.scene);
