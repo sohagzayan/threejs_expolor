@@ -1,9 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
+import { Hurricane, Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Scene from "@/components/Scene";
 import ThreeDText from "@/components/ThreeDText";
+import Shadows from "@/components/Shadows";
+import HauntedHouse from "@/components/HauntedHouse";
+import GalaxyGenerator from "@/components/GalaxyGenerator";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +21,10 @@ export default function Home() {
       </Head>
       <main>
         {/* <Scene /> */}
-        <ThreeDText />
+        {/* <ThreeDText /> */}
+        {/* <Shadows /> */}
+        {/* <HauntedHouse /> */}
+        <GalaxyGenerator />
       </main>
     </>
   );
